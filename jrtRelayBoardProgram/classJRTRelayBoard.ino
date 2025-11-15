@@ -27,7 +27,7 @@ classJRTRelayBoard& classJRTRelayBoard::getInstance(void)
 classJRTRelayBoard::classJRTRelayBoard()
 {
     // ピンの初期設定
-    pinMode(2, OUTPUT);     // デジタルピン2をOutput指定
+    pinMode(msc_u8LedPin, OUTPUT);     // デジタルピン2をOutput指定
 }
 
 /**
@@ -35,8 +35,8 @@ classJRTRelayBoard::classJRTRelayBoard()
  */
 void classJRTRelayBoard::LedFlashing(void)
 {
-    digitalWrite(2, HIGH);  // LED ON (ピン2：HIGH出力)
+    digitalWrite(msc_u8LedPin, HIGH);  // LED ON (ピン2：HIGH出力)
     delay(500);             // 100ms wait
-    digitalWrite(2, LOW);   // LED OFF (ピン2：LOW出力)
+    digitalWrite(msc_u8LedPin, LOW);   // LED OFF (ピン2：LOW出力)
     delay(1000);             // 100ms wait
 }
