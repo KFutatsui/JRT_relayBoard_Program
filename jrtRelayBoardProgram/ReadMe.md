@@ -4,7 +4,7 @@
 # プログラム構成
 - JRT_relayBoard_Program_main.ino
   - 後述するclassJRTRelayBoardを呼び出して実際の処理内容を記述するためのプログラム
-  - プログラムの胥吏内容をいじる場合はこのファイルのプログラムを触る
+  - プログラムの処理内容をいじる場合はこのファイルのプログラムを触る
 - classJRTRelayBoard.h
   - classJRTRelayBoardのクラスの構成について定義しているファイル
   - classJRTRelayBoardはシングルトンクラスのため扱いには注意
