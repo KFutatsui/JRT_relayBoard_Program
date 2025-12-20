@@ -1,4 +1,5 @@
-#include "classJRTRelayBoard.h"  /// 必ずこのコードを書く
+#include "classJRTRelayBoard.h"  /// 必ずこのコードを書く]
+
 
 static classJRTRelayBoard *spClassJRTRelayBoardInstance;  /// 必ずこのコードを書く
 
@@ -7,8 +8,6 @@ void setup() {
 }
 
 void loop() {
-  spClassJRTRelayBoardInstance->LedFlashing();
-
   spClassJRTRelayBoardInstance->digitalInputGetStatus();
   spClassJRTRelayBoardInstance->analogInputGetStatus();
 
