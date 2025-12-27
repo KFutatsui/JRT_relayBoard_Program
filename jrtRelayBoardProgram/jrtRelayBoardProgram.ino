@@ -5,6 +5,7 @@ static classJRTRelayBoard *spClassJRTRelayBoardInstance;  /// 必ずこのコー
 
 void setup() {
   spClassJRTRelayBoardInstance = &classJRTRelayBoard::getInstance();  /// 必ずsetup関数でこのコードを書く
+  delay(2000);
 }
 
 void loop() {
